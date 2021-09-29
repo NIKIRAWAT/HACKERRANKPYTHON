@@ -1,0 +1,15 @@
+ a=[]
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        a.append([name,score])
+        sorte_s=sorted(list(set([x[1] for x in a])))
+    sl=sorte_s[1]
+    low=[]
+    for values in a:
+        if sl==values[1]:
+            low.append(values[0])
+    k=sorted(low)
+    for i in k:
+        print(i)
+       
