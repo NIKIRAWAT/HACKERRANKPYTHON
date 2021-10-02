@@ -1,0 +1,8 @@
+if __name__ == '__main__':
+    n,x=map(int,input().split(" "))
+    marks=[]
+    for i in range(x):
+        marks.append(map(float,input().split(" ")))
+    for j in zip(*marks):
+        print(sum(j)/len(j))
+
