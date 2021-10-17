@@ -1,0 +1,14 @@
+def removeDuplicates(self,head):
+        #Write your code here
+        qu = []
+        if head == None:
+            return 
+        p = head
+        qu.append(p.data)
+        p = p.next
+        while p is not None:
+            qu.append(p.data)
+            p = p.next
+        qu = list(dict.fromkeys(qu))
+        for item in qu:
+            print(item,end=' ')
